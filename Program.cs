@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Hearts!");
-            int players = 0;
+            int players = 4;
             while (players == 0)
             {
                 try
