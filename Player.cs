@@ -12,9 +12,11 @@ namespace heartsGame
         private Card[] playerCards = new Card[13];
         private int totalScore;
         private int turnScore;
+        private bool bot;
 
-        public Player(int playerNumber)
+        public Player(int playerNumber, bool bot)
         {
+            this.bot = bot;
             this.playerID = playerNumber;
             totalScore = 0;
             turnScore = 0;

@@ -30,6 +30,9 @@ namespace heartsGame
         public void startGame()
         {
             Console.WriteLine("You've started the game with {0} players", playerCount);
+            //create players
+            createPlayers();
+
             //create deck
             //createDeck();
             Scoresheet scoresheet = new Scoresheet();
@@ -62,8 +65,13 @@ namespace heartsGame
 
             Console.WriteLine("Winner Found!");
 
-            
+        }
+        private void createPlayers()
+        {
+            for (int playerID = 1; playerID < 5; playerID++)
+            {
 
+            }
         }
         private void beginTurn()
         {
